@@ -38,17 +38,20 @@ def prepare_data(zip_path: str):
     # Adding column tf to dataset. This column is a word frequency dictionary for each tweet
     tweets_df = tweets_df.assign(tf=calculate_tf(tweets_df['text']))
 
-    print("Printing word frequencies for first 5 tweets")
+    print("Printing word frequencies for first 5 tweets:\n")
     print_list_element(calculate_tf(tweets_df['text']))
     print("------------------------------------------------------------------------------------------------------------"
           "-------------------------------------------------------------------------------\n")
-    print("Printing bag 10 first elements of bag of words sorted alphabetically")
+    print("Printing bag 10 first elements of bag of words sorted alphabetically:\n")
     print_list_element(create_bag_list(tweets_df['text']), 10)
     print("------------------------------------------------------------------------------------------------------------"
           "-------------------------------------------------------------------------------\n")
 
     # Print element 20th from dataset
+    print("Printing 20th element of dataset:\n")
     print(tweets_df.iloc[20])
+    print("------------------------------------------------------------------------------------------------------------"
+          "-------------------------------------------------------------------------------\n")
 
     # Saving dataset to csv into data output folder
     dataframe_to_csv(tweets_df)

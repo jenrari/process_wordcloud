@@ -9,9 +9,7 @@ def print_list_element(input_list: list, num=5, descending=True):
         for i in range(-1 - num):
             print_list.append(input_list[i])
 
-    print("Printing the word frequencies dictionary for the first {} tweets\n".format(num))
     print(print_list)
-    print("\n")
 
 
 def get_clusters(tweets_df) -> list:

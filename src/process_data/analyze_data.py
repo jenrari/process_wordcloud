@@ -11,12 +11,15 @@ def analyze_data(tweets_df):
     data folder
     :param tweets_df: dataset imported and preprocessed as result of function prepare_data
     """
-    print("Starting data processing:\n")
+    print("------------------------------------------------------------------------------------------------------------"
+          "-------------------------------------------------------------------------------\n")
+    print("\nStarting data processing:\n")
     print("There are {} clusters in this datasets\n".format(len(get_clusters(tweets_df))))
 
-    # Muestra mensajes del ejercicio
+    # Checking if there are null values in column text
     check_empty_text(tweets_df)
-    print_list_element(create_tweet_list(tweets_df))
+    print("------------------------------------------------------------------------------------------------------------"
+          "-------------------------------------------------------------------------------\n")
     for c in get_clusters(tweets_df):
         print("Generating word frequency dictionary for cluster {}".format(c))
         tf_list = create_tweet_list(tweets_df.loc[tweets_df["sentiment"] == c])
