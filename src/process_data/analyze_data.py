@@ -8,7 +8,8 @@ tweets_df = prepare_data('C:\\Users\\juanma\\Desktop\\fp2\\activities\\activity_
 
 print("Starting data process")
 print("There are {} clusters in this datasets".format(len(get_clusters(tweets_df))))
-   # Muestra mensajes del ejercicio
+
+# Muestra mensajes del ejercicio
 check_empty_text(tweets_df)
 print_list_element(create_tweet_list(tweets_df))
 for c in get_clusters(tweets_df):
