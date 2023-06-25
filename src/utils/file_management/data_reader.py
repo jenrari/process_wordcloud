@@ -25,5 +25,4 @@ def read_csv_to_df(zip_path: str) -> pd.DataFrame:
             zip_f.extractall(path=data_path)
 
     tweets_df = pd.read_csv(csv_path)
-
     return tweets_df

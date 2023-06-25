@@ -36,18 +36,10 @@ def preprocess_text(tweets_df: pd.DataFrame) -> pd.DataFrame:
     return tweets_df
 
 
-def create_tweet_list(tweets_df):
-
-    # pasar solo la columna tf
-    tweet_list = tweets_df['tf'].to_list()
-    return tweet_list
-
-
 def remove_stop_words(tweets_df):
 
     tweets_df['text'] = tweets_df['text'].apply(lambda x: ' '.join([word for word in x.split()
                                                                     if word not in stop_words]))
-    print(tweets_df.tail())
     return tweets_df
 
 
