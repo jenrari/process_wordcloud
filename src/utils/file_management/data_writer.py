@@ -1,5 +1,5 @@
 # data_path folder definition
-data_path = ".\data\\"
+data_path = ".\\data\\"
 output_path = data_path + "output\\"
 
 

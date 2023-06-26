@@ -3,7 +3,13 @@ import os.path
 import zipfile as zf
 
 # Definition variable for project data path
-data_path = "../../../data"
+data_path = ".\\data\\"
+
+
+def check_zip_folder(zip_folder):
+    if zip_folder is None:
+
+        return False
 
 
 def read_csv_to_df(zip_path: str) -> pd.DataFrame:
@@ -14,11 +20,9 @@ def read_csv_to_df(zip_path: str) -> pd.DataFrame:
     :param zip_path: Argument passed as string, path of twitter zip file
     :return: Pandas dataframe for twitter csv content
     """
-    if zip_path is None:
-        print("Please enter path for twitter zip file")
-        zip_path = input()
 
-    csv_path = data_path + "\\twitter_reduced.csv"
+
+    csv_path = data_path + "twitter_reduced.csv"
 
     with zf.ZipFile(zip_path, 'r') as zip_f:
         if not os.path.exists(csv_path):

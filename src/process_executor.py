@@ -1,5 +1,7 @@
+import sys
 from preprocessing.preprocess_data import prepare_data
 from process_data.analyze_data import analyze_data
+from utils.file_management.data_reader import check_zip_folder
 
 """
 This is the main function of the program. It calls the preprocess_data module passing as argument the zip file
@@ -9,7 +11,15 @@ it is cleaned and prepared for processing
 Finally, analize_data module store the output information of the program into the output data folder
 """
 
-tweets_df = prepare_data('C:\\Users\\juanma\\Desktop\\fp2\\activities\\activity_4\\data\\twitter_reduced.zip')
+zip_folder = ""
+
+if not check_zip_folder(zip_folder):
+    print("\nIt is needed to use zip_folder variable to process file with tweets information."
+          " Please read README file\n ")
+    sys. exit()
+
+
+tweets_df = prepare_data(zip_folder)
 analyze_data(tweets_df)
 print("------------------------------------------------------------------------------------------------------------"
       "-------------------------------------------------------------------------------\n")
