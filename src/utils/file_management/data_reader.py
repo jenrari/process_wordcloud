@@ -7,7 +7,7 @@ data_path = "./data/"
 
 
 def check_zip_folder(zip_folder):
-    if zip_folder is "":
+    if zip_folder == "":
 
         return False
 
