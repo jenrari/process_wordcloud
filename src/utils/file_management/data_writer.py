@@ -1,6 +1,6 @@
 # data_path folder definition
-data_path = ".\\data\\"
-output_path = data_path + "output\\"
+data_path = "./data/"
+output_path = data_path + "output/"
 
 
 def dataframe_to_csv(tweets_df):

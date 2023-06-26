@@ -3,7 +3,7 @@ import os.path
 import zipfile as zf
 
 # Definition variable for project data path
-data_path = ".\\data\\"
+data_path = "./data/"
 
 
 def check_zip_folder(zip_folder):
