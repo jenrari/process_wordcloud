@@ -32,5 +32,5 @@ Installation and run the program 🔧
 5. Finally run the program invoking the main module process_executor.py:
        python.exe src\process_executor.py
 
-Licencia 📄
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para detalles
+License 📄
+This project is under license: GNU GENERAL PUBLIC LICENSE - check file LICENSE.md for further details.
