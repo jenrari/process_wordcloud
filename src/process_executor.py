@@ -11,11 +11,11 @@ it is cleaned and prepared for processing
 Finally, analize_data module store the output information of the program into the output data folder
 """
 
-zip_folder = ""
+zip_folder = "/home/datasci/prog_datasci_2/activities/activity_4/data/"
 
 if not check_zip_folder(zip_folder):
-    print("\nIt is needed to use zip_folder variable to process file with tweets information."
-          " Please read README file\n ")
+    print("\nIt is needed to use zip_folder variable to process file with tweets information. Please enter a valid"
+          "zip file. In this project it is available a README file which you could find interesting to read\n ")
     sys. exit()
 
 

@@ -8,8 +8,12 @@ data_path = "./data/"
 
 def check_zip_folder(zip_folder):
     if zip_folder == "":
-
         return False
+    else:
+        if os.path.exists(zip_folder):
+            return True
+        else:
+            return False
 
 
 def read_csv_to_df(zip_path: str) -> pd.DataFrame:
