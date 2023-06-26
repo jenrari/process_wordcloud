@@ -11,7 +11,7 @@ it is cleaned and prepared for processing
 Finally, analize_data module store the output information of the program into the output data folder
 """
 
-zip_folder = "/home/datasci/prog_datasci_2/activities/activity_4/data/"
+zip_folder = "/home/datasci/prog_datasci_2/activities/activity_4/data/tweeter_reduced.zip"
 
 if not check_zip_folder(zip_folder):
     print("\nIt is needed to use zip_folder variable to process file with tweets information. Please enter a valid"
