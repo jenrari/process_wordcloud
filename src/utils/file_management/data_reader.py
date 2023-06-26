@@ -10,7 +10,7 @@ def check_zip_folder(zip_folder):
     if zip_folder == "":
         return False
     else:
-        if os.path.exists(zip_folder):
+        if os.path.exists(zip_folder) and zip_folder.split(".")[-1] == "zip":
             return True
         else:
             return False
