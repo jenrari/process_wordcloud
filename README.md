@@ -47,7 +47,7 @@ Installation and run the program 🔧
 2. Second step is to open a terminal and navigate into the project folder which is process_wordcloud
 3. Only for Windows system: Once you are located into the project folder run the virtual environment for python with the
      following command:  venv\Scripts\activate. 
-   In case it is needed in Linux systems command is: venv/bin/activate
+   In case it is needed, in Linux systems command is: venv/bin/activate
 4. Install requirements using the following command: pip -r install requirements.txt
 5. Upgrade Pillow component by running the following command: python3 -m pip install --upgrade Pillow
 5. Finally run the program invoking the main module process_executor.py from the project folder:
