@@ -24,7 +24,7 @@ It is containing subpackage File management which is holding the functionalities
       - data_reader.py: Having all functions used to read files from system
       - data_writer.py: Having all functions used to save files resulted during processing
 
-
+## Configure, install and run the project
 Getting ready 🚀
 You could obtain a copy of the software for your personal use or development purposses cloning the following project: [https://github.com/jenrari/process_wordcloud](https://github.com/jenrari/process_wordcloud.git)
 Take a look to installation section to know how to deploy and execute the project
