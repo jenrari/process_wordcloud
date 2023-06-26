@@ -1,6 +1,6 @@
 from utils.file_management.data_writer import wc_to_file, hist_to_file
 from .generate_wc import generate_wc, generate_wf_hist, create_freq_reduce
-from utils.support_functions import check_empty_text, get_clusters, print_list_element, create_tweet_list
+from utils.support_functions import check_empty_text, get_clusters, create_tweet_list
 
 
 def analyze_data(tweets_df):
