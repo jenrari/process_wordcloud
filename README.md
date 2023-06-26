@@ -26,8 +26,8 @@ It is containing subpackage File management which is holding the functionalities
 
 
 Getting ready 🚀
-You could obtain a copy of the software for your personal use or development purposses cloning the following project: https://github.com/jenrari/process_wordcloud
-Take a look to deployment section to know how to deploy and execute the project
+You could obtain a copy of the software for your personal use or development purposses cloning the following project: [https://github.com/jenrari/process_wordcloud](https://github.com/jenrari/process_wordcloud.git)
+Take a look to installation section to know how to deploy and execute the project
 
 Requisites 🔩
 Install python on your computer
