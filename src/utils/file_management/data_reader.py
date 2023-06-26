@@ -20,8 +20,6 @@ def read_csv_to_df(zip_path: str) -> pd.DataFrame:
     :param zip_path: Argument passed as string, path of twitter zip file
     :return: Pandas dataframe for twitter csv content
     """
-
-
     csv_path = data_path + "twitter_reduced.csv"
 
     with zf.ZipFile(zip_path, 'r') as zip_f:
